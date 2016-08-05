@@ -1,0 +1,20 @@
+{
+  "name": "fun-with-callbacks",
+  "private": true,
+  "description": "Get saved from callback hell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beautifulcoder/FunWithCallbacks.git"
+  },
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node_modules/.bin/mocha --ui bdd test/**/*.js",
+    "callback-hell": "node callbackHell.js",
+    "dependency-inversion": "node callbackDependencyInversion.js",
+    "polymorphic-callback": "node callbackPoloymorphic.js"
+  },
+  "devDependencies": {
+    "mocha": "3.0.1",
+    "chai": "3.5.0"
+  }
+}

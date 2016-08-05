@@ -1,0 +1,14 @@
+{
+  "curly": true,
+  "eqeqeq": true,
+  "freeze": true,
+  "maxdepth": 2,
+  "maxstatements": 5,
+  "maxparams": 3,
+  "funcscope": true,
+  "esversion": 6,
+  "forin": true,
+  "maxcomplexity": 3,
+  "nonew": true,
+  "unused": true
+}
