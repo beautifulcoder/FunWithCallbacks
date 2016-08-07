@@ -1,33 +1,29 @@
-setTimeout(getPanther, 1, 'Panther');
+makeAsyncCall('', 'Panther', getJaguar);
 
-var catList = '';
-
-function getPanther(name) {
-  catList = name + ',';
-
-  setTimeout(getJaguar, 1, 'Jaguar');
+function getJaguar(list) {
+  makeAsyncCall(list, 'Jaguar', getLynx);
 }
 
-function getJaguar(name) {
-  catList += name + ',';
-
-  setTimeout(getLynx, 1, 'Lynx');
+function getLynx(list) {
+  makeAsyncCall(list, 'Lynx', getSnowLeopard);
 }
 
-function getLynx(name) {
-  catList += name + ',';
-
-  setTimeout(getSnowLeopard, 1, 'Snow Leopard');
+function getSnowLeopard(list) {
+  makeAsyncCall(list, 'Snow Leopard', getLion);
 }
 
-function getSnowLeopard(name) {
-  catList += name + ',';
-
-  setTimeout(getLion, 1, 'Lion');
+function getLion(list) {
+  makeAsyncCall(list, 'Lion', printList);
 }
 
-function getLion(name) {
-  catList += name;
+function printList(list) {
+  console.log(list);
+}
 
-  console.log(catList);
+function makeAsyncCall(list, returnValue, fn) {
+  setTimeout(function asyncCall(data) {
+    var catList = list === '' ? data : list + ',' + data;
+
+    fn(catList);
+  }, 1, returnValue);
 }
