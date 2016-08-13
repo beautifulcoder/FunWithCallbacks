@@ -1,26 +1,26 @@
-makeAsyncCall('', 'Panther', getJaguar);
+buildFerociousCats('', 'Panther', getJaguar);
 
 function getJaguar(list) {
-  makeAsyncCall(list, 'Jaguar', getLynx);
+  buildFerociousCats(list, 'Jaguar', getLynx);
 }
 
 function getLynx(list) {
-  makeAsyncCall(list, 'Lynx', getSnowLeopard);
+  buildFerociousCats(list, 'Lynx', getSnowLeopard);
 }
 
 function getSnowLeopard(list) {
-  makeAsyncCall(list, 'Snow Leopard', getLion);
+  buildFerociousCats(list, 'Snow Leopard', getLion);
 }
 
 function getLion(list) {
-  makeAsyncCall(list, 'Lion', printList);
+  buildFerociousCats(list, 'Lion', printList);
 }
 
 function printList(list) {
   console.log(list);
 }
 
-function makeAsyncCall(list, returnValue, fn) {
+function buildFerociousCats(list, returnValue, fn) {
   setTimeout(function asyncCall(data) {
     var catList = list === '' ? data : list + ',' + data;
 
