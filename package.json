@@ -11,7 +11,7 @@
     "test": "node_modules/.bin/mocha --ui bdd test/**/*.js",
     "callback-hell": "node callbackHell.js",
     "dependency-inversion": "node callbackDependencyInversion.js",
-    "polymorphic-callback": "node callbackPoloymorphic.js"
+    "polymorphic-callback": "node callbackPolymorphic.js"
   },
   "devDependencies": {
     "mocha": "3.0.1",
