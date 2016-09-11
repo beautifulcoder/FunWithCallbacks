@@ -9,6 +9,7 @@
   "version": "0.0.1",
   "scripts": {
     "test": "node_modules/.bin/mocha --ui bdd test/**/*.js",
+    "simple-callback": "node simpleCallback.js",
     "callback-hell": "node callbackHell.js",
     "dependency-inversion": "node callbackDependencyInversion.js",
     "polymorphic-callback": "node callbackPolymorphic.js"
