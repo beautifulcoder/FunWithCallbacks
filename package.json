@@ -12,7 +12,8 @@
     "simple-callback": "node simpleCallback.js",
     "callback-hell": "node callbackHell.js",
     "dependency-inversion": "node callbackDependencyInversion.js",
-    "polymorphic-callback": "node callbackPolymorphic.js"
+    "polymorphic-callback": "node callbackPolymorphic.js",
+    "promise": "node callbackPromise.js"
   },
   "devDependencies": {
     "mocha": "3.0.1",
